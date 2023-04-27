@@ -7,7 +7,7 @@
         W hołdzie Pastolektorowi i wszystkim poległym Anonom, które stworzyły
         wspaniąłą kulturę past.
       </div>
-      <img src="@/assets/hero.png" />
+      <img src="@/assets/hero_dark.png" />
     </div>
   </div>
 </template>
@@ -31,5 +31,6 @@ img {
   width: 1200px;
   max-width: 100vw;
   margin-top: 20px;
+  border-radius: 20px;
 }
 </style>

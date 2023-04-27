@@ -25,7 +25,7 @@
 nav {
   position: fixed;
   z-index: 10;
-  background: #e3e3e3;
+  background: $gray1;
   display: flex;
   justify-content: space-evenly;
   width: 95vw;
@@ -37,6 +37,7 @@ nav {
   a {
     margin: 5px 10px;
     font-size: 20px;
+
     @media (max-width: 1000px) {
       margin: 5px;
       font-size: 17px;
@@ -59,7 +60,7 @@ nav {
 .logo {
   width: 200px;
   height: 80px;
-  background-image: url('../../../assets/logo.png');
+  background-image: url('../../../assets/logo_dark.png');
   background-size: 100%;
   margin: 0 7vw;
   @media (max-width: 1000px) {

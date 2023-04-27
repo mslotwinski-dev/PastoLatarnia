@@ -18,7 +18,7 @@ export default defineComponent({
     return { content: '' }
   },
   mounted() {
-    const getStr = (str: string) => str.split(/\s+/).slice(0, 100).join(' ')
+    const getStr = (str: string) => str.split(/\s+/).slice(0, 70).join(' ')
 
     axios.get(`/pasta-data/${this.pasta.id}.txt`).then((res) => {
       this.content = getStr(res.data) + '...'
@@ -28,15 +28,17 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/index.scss';
+
 .item {
-  background: #e3e3e3;
+  background: $gray1;
   border-radius: 10px;
   display: flex;
   width: 95vw;
-  max-width: 800px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 20px;
   .name {
     font-size: 22px;
     font-weight: 500;
@@ -50,7 +52,7 @@ export default defineComponent({
     text-align: right;
     margin: 10px;
     a {
-      background: #e28c00;
+      background: $orange;
       color: #e3e3e3;
       display: inline-block;
       padding: 8px 16px;
