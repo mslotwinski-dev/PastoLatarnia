@@ -65,6 +65,8 @@ export default defineComponent({
     axios.get(`/pasta-data/${this.$route.params.id}.txt`).then((res) => {
       this.content = res.data
     })
+
+    document.title = this.pasta?.name + ' | Pastolatarnia'
   },
 })
 </script>

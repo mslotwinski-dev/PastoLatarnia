@@ -20,6 +20,9 @@ export default defineComponent({
   components: {
     Pasta,
   },
+  mounted() {
+    document.title = 'Pasty | Pastolatarnia'
+  },
 })
 </script>
 
