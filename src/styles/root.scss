@@ -1,3 +1,24 @@
+// VARIABLES
+
+$height: calc(60px + 4vh);
+$heightmob: calc(35px + 4vh);
+
+
+$main: #e28c00;
+$main2: #2e4057;
+$violet: #62477a;
+$rose: #a50034;
+// $main2: #d12727;
+$light: #e3e3e3;
+$gray: #c6cbcc;
+$dark_gray: #7c888c;
+$dark: #28353a;
+$black: #1b2023;
+$bg: #09151e;
+
+
+// ROOT
+
 *,
 *:before,
 *:after {
@@ -22,7 +43,7 @@ body {
   padding: 0px !important;
   margin: 0px !important;
   overflow-x: hidden;
-  background-color: #2f2f2f; 
+  background-color: $black; 
   min-height: 100vh;
   color: #cdcdcd;
 }

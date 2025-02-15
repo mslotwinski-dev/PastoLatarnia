@@ -31,18 +31,20 @@ export default defineComponent({
 @import '@/styles/index.scss';
 
 .item {
-  background: $gray1;
+  background: $rose;
   border-radius: 10px;
   display: flex;
   width: 95vw;
-  max-width: 700px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
   .name {
     font-size: 22px;
     font-weight: 500;
-    padding: 10px;
+    padding: 10px 0;
+    text-align: justify;
+    text-transform: uppercase;
   }
   .content {
     font-size: 16px;
@@ -52,7 +54,7 @@ export default defineComponent({
     text-align: right;
     margin: 10px;
     a {
-      background: $orange;
+      background: $main;
       color: #e3e3e3;
       display: inline-block;
       padding: 8px 16px;

@@ -25,7 +25,7 @@
 nav {
   position: fixed;
   z-index: 10;
-  background: $gray1;
+  background: $rose;
   display: flex;
   justify-content: space-evenly;
   width: 95vw;

@@ -4,7 +4,11 @@
   <div>
     <div class="content">
       <div class="name" v-html="pasta.name" />
+      <div class="bar" />
+
       <article v-html="content" />
+
+      <div class="bar" />
 
       <div class="buttons">
         <div class="button" @click="copy()">Skopiuj</div>
@@ -66,6 +70,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import '@/styles/index.scss';
 div {
   flex-grow: 1;
 }
@@ -79,7 +84,6 @@ div {
 }
 
 .name {
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
@@ -141,6 +145,14 @@ article {
 }
 
 .buttons {
-  margin: 15px;
+  margin: 15px 0;
+}
+
+.bar {
+  height: 2px;
+  width: 50%;
+  background: $main;
+  border-radius: 6px;
+  margin: 15px 0;
 }
 </style>
